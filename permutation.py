@@ -6,10 +6,12 @@ if len(k)==2:
 else:
     for i in range(2,len(k)):
         for e in l:
-            for j in range(len(e)):
+            for j in range(len(e)+1):
                 m.append(e[:j:]+k[i]+e[j::])
         l=m
+        m=[]
 # print(k[2::])           
 
 #for i in
 print(l)
+print(len(l))
